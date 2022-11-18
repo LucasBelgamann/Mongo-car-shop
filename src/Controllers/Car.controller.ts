@@ -15,7 +15,9 @@ export default class CarController {
 
   public findOne = async (req: Request, res: Response) => {
     const regex = /^[a-f\d]{24}$/i;
-    const idOfCar = await this.carService.findOne(req.params.id);
+    const { id } = req.params;
+
+    const idOfCar = await this.carService.findOne(id);
     if (!idOfCar) {
       return res.status(404).json({ message: 'Car not found' });
     }
@@ -23,5 +25,10 @@ export default class CarController {
       return res.status(422).json({ message: 'Invalid mongo id' });
     }
     return res.status(200).json(idOfCar);
-  }; 
+  };
+
+  public findAll = async (_req: Request, res: Response) => {
+    const cars = await this.carService.findAll();
+    return res.status(200).json(cars);
+  };
 }

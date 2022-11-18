@@ -7,5 +7,6 @@ const carController = new CarController();
 
 router.post('/', carController.create);
 router.get('/:id', carController.findOne);
+router.get('/', carController.findAll);
 
 export default router;
