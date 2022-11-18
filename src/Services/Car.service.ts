@@ -14,9 +14,12 @@ export default class CarService {
   }
 
   async createNewCar(newCar: ICar): Promise<Car> {
-    console.log(newCar, 'new car');
     const car = await this._carModel.create(newCar);
-    console.log(car, 'car');
     return this.createCarDomain(car);
+  }
+
+  public async findOne(id: string) {
+    const idOfCar = await this._carModel.findById(id);
+    return idOfCar;
   }
 }
