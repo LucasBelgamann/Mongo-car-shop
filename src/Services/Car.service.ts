@@ -25,6 +25,13 @@ export default class CarService {
 
   public async findOne(id: string) {
     const idOfCar = await this._carModel.findById(id);
-    return idOfCar;
+    if (idOfCar) return new Car(idOfCar);
+  }
+
+  public async updateForId(id: string, car: ICar) {
+    const upCarForId = await this._carModel.updateForId(id, car);
+    if (upCarForId) {
+      return new Car(upCarForId);
+    }
   }
 }
