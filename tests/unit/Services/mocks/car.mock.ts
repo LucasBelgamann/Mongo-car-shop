@@ -1,61 +1,73 @@
 import ICar from '../../../../src/Interfaces/ICar';
-import Car from '../../../../src/Domains/Car';
-
-const mockId: ICar = {
-  id: '6352f8ea74092b2e6a784c51',
-  model: 'Marea',
-  year: 2002,
-  color: 'Black',
-  status: true,
-  buyValue: 15.990,
-  doorsQty: 4,
-  seatsQty: 5,
-};
 
 const car: ICar = {
-  model: 'Marea',
-  year: 2002,
-  color: 'Black',
+  model: 'Uno',
+  year: 1994,
+  color: 'Red',
   status: true,
-  buyValue: 15.990,
+  buyValue: 30000,
   doorsQty: 4,
   seatsQty: 5,
 };
 
-const carResult: ICar[] = [
+const cars: ICar[] = [
   {
-    id: '634852326b35b59438fbea2f',
+    id: '6376da92d88bd2bf7da9c932',
     model: 'Marea',
-    year: 2002,
+    year: 2003,
     color: 'Black',
     status: true,
-    buyValue: 15.99,
+    buyValue: 30000,
     doorsQty: 4,
     seatsQty: 5,
   },
   {
-    id: '634852326b35b59438fbea31',
-    model: 'C30',
-    year: 2008,
-    color: 'Azul',
-    buyValue: 34,
+    id: '6376daa4d88bd2bf7da9c933',
+    model: 'Corsa',
+    year: 2000,
+    color: 'Black',
+    buyValue: 20000,
     doorsQty: 2,
     seatsQty: 5,
+    status: false,
   },
 ];
 
-const firstCarDomain: Car = new Car(carResult[0]);
+const carWithId: ICar = {
+  id: '634852326b35b59438fbea2f',
+  model: 'Monza',
+  year: 1992,
+  color: 'Black',
+  buyValue: 50000,
+  doorsQty: 2,
+  seatsQty: 5,
+  status: false,
+};
 
-const secondCarDomain: Car = new Car(carResult[1]);
+const updatedCar: ICar = {
+  id: '634852326b35b59438fbea2f',
+  model: 'Fox',
+  year: 1996,
+  color: 'red',
+  buyValue: 20000,
+  doorsQty: 2,
+  seatsQty: 5,
+  status: false,
+};
 
-const carList: Car[] = [
-  firstCarDomain,
-  secondCarDomain,
-];
+const update = {
+  model: 'Fox',
+  year: 1996,
+  color: 'Yellow',
+  buyValue: 50000,
+  doorsQty: 2,
+  seatsQty: 5,
+};
 
 export {
   car,
-  mockId,
-  carResult,
-  carList,
+  cars,
+  carWithId,
+  updatedCar,
+  update,
 };
