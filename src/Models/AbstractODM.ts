@@ -3,7 +3,6 @@ import {
   Schema,
   model,
   models,
-  UpdateQuery,
   isValidObjectId,
 } from 'mongoose';
 import CatchError from '../utils/CatchE';
@@ -34,6 +33,6 @@ export default abstract class AbstractODM<T> {
 
   public async updateForId(id: string, obj: Partial<T>): Promise<T | null> {
     if (!isValidObjectId(id)) throw new CatchError('Invalid mongo id', 422);
-    return this.model.findByIdAndUpdate({ id }, { ...obj } as UpdateQuery<T>, { new: true });
+    return this.model.findByIdAndUpdate(id, obj, { new: true });
   }
 }

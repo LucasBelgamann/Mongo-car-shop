@@ -36,9 +36,12 @@ export default class CarController {
 
   public updateForId = async (req: Request, res: Response) => {
     const { id } = req.params;
-    try { 
-      const upCarForId = await this.carService.updateForId(id, req.body);
-      if (!upCarForId) return res.status(404).json({ message: 'Car not found' });
+    const { body } = req;
+    try {  
+      const idOfCar = await this.carService.findOne(id);
+      if (!idOfCar) return res.status(404).json({ message: 'Car not found' });
+
+      const upCarForId = await this.carService.updateForId(id, body);
       return res.status(200).json(upCarForId);
     } catch (err) {
       if (err instanceof CatchError) {

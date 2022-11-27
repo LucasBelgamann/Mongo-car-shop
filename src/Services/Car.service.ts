@@ -31,7 +31,7 @@ export default class CarService {
   public async updateForId(id: string, car: ICar) {
     const upCarForId = await this._carModel.updateForId(id, car);
     if (upCarForId) {
-      return new Car(upCarForId);
+      return this.createCarDomain(upCarForId);
     }
   }
 }
