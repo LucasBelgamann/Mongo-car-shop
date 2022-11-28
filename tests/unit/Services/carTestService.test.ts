@@ -35,7 +35,7 @@ describe('Test /car', function () {
     const service = new CarService();
     const result = await service.findOne('634852326b35b59438fbea2f');
 
-    expect(result).to.be.deep.equal(car);
+    expect(result).to.be.deep.equal(carWithId);
   });
 
   it('Testing update cars', async function () {

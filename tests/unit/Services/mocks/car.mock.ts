@@ -35,11 +35,11 @@ const cars: ICar[] = [
 
 const carWithId: ICar = {
   id: '634852326b35b59438fbea2f',
-  model: 'Monza',
-  year: 1992,
-  color: 'Black',
-  buyValue: 50000,
-  doorsQty: 2,
+  model: 'Uno',
+  year: 1994,
+  color: 'Red',
+  buyValue: 30000,
+  doorsQty: 4,
   seatsQty: 5,
   status: false,
 };
@@ -52,7 +52,7 @@ const updatedCar: ICar = {
   buyValue: 20000,
   doorsQty: 2,
   seatsQty: 5,
-  status: false,
+  status: true,
 };
 
 const update = {
