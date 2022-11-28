@@ -28,10 +28,10 @@ export default class MotorcycleService {
     if (idOfMoto) return new Motorcycle(idOfMoto);
   }
 
-  // public async updateForId(id: string, moto: IMoto) {
-  //   const upMotoForId = await this._motorcycleModel.updateForId(id, moto);
-  //   if (upMotoForId) {
-  //     return this.createMotoDomain(upMotoForId);
-  //   }
-  // }
+  public async updateForId(id: string, moto: IMoto) {
+    const upMotoForId = await this._motorcycleModel.updateForId(id, moto);
+    if (upMotoForId) {
+      return this.createMotoDomain(upMotoForId);
+    }
+  }
 }

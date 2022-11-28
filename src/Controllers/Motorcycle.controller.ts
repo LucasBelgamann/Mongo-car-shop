@@ -34,19 +34,19 @@ export default class CarController {
     return res.status(200).json(motors);
   };
 
-  //   public updateForId = async (req: Request, res: Response) => {
-  //     const { id } = req.params;
-  //     const { body } = req;
-  //     try {  
-  //       const idOfMotor = await this.motoService.findOne(id);
-  //       if (!idOfMotor) return res.status(404).json({ message: 'Motorcycle not found' });
+  public updateForId = async (req: Request, res: Response) => {
+    const { id } = req.params;
+    const { body } = req;
+    try {  
+      const idOfMotor = await this.motoService.findOne(id);
+      if (!idOfMotor) return res.status(404).json({ message: 'Motorcycle not found' });
 
-//       const upMotorForId = await this.motoService.updateForId(id, body);
-//       return res.status(200).json(upMotorForId);
-//     } catch (err) {
-//       if (err instanceof CatchError) {
-//         return res.status(err.status).json({ message: err.message });
-//       }
-//     }
-//   };
+      const upMotorForId = await this.motoService.updateForId(id, body);
+      return res.status(200).json(upMotorForId);
+    } catch (err) {
+      if (err instanceof CatchError) {
+        return res.status(err.status).json({ message: err.message });
+      }
+    }
+  };
 }
