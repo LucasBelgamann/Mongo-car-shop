@@ -9,12 +9,13 @@ Para este projeto, foram desenvolvidos os princípios de Programação Orientada
 
 ## 🛸 # Construído com
 
-* <a href="https://www.mongodb.com/home" target="blanck" ><img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Ficons8.com.br%2Ficon%2F74402%2Fmongodb&psig=AOvVaw0_S2UHuXYzhkyfz8_td6Kj&ust=1669771729384000&source=images&cd=vfe&ved=0CA8QjRxqFwoTCMC168ee0vsCFQAAAAAdAAAAABAE" width="30" height="33" alt="Jest" /></a> - MongoDb - banco de dados NoSQL.
-* <a href="https://www.mongodb.com/home" target="blanck" ><img src="https://the-guild.dev/blog-assets/nodejs-esm/nodejs_logo.png" width="30" height="33" alt="Jest" /></a> - Node - Tecnologia utilizada.
-* <a href="https://nodejs.org/en/" target="blanck" ><img src="https://the-guild.dev/blog-assets/nodejs-esm/nodejs_logo.png" width="30" height="33" alt="Jest" /></a> - Mongoose - Conexão com o MongoDB.
-* <a href="https://www.devmedia.com.br/programacao-orientada-a-objetos-e-programacao-estruturada/32813#:~:text=A%20programa%C3%A7%C3%A3o%20orientada%20a%20objetos%20%C3%A9%20um%20modelo%20de%20programa%C3%A7%C3%A3o,estados%20poss%C3%ADveis%20definidos%20por%20atributos." ><img src="https://cdn-icons-png.flaticon.com/512/446/446969.png" width="30" height="33" alt="Jest" /></a> - POO (Programação orientada a objetos) - Estrutura do projeto.
-* <a href="https://www.typescriptlang.org/" target="blanck" ><img src="https://cdn-icons-png.flaticon.com/512/5968/5968381.png" width="30" height="33" alt="Jest" /></a> - Typescript - Linguagem de programação utilizada.
-* <a href="https://expressjs.com/pt-br/" target="blanck" ><img src="https://assets.website-files.com/61ca3f775a79ec5f87fcf937/6202fcdee5ee8636a145a41b_1234.png" width="30" height="33" alt="Jest" /></a> - Express - Framework para Node.js que fornece recursos mínimos para construção de servidores web.
+* <a href="https://nodejs.org/en/" target="blanck" >Node.js</a> - Tecnologia utilizada.
+* <a href="https://www.mysql.com/" target="blanck" >MongoDb</a> - banco de dados NoSQL.
+* <a href="https://www.mysql.com/" target="blanck" >Mongoose</a> - Conexão entre o MongoDB.
+* <a href="https://www.devmedia.com.br/arquitetura-de-software-desenvolvimento-orientado-para-arquitetura/8033" target="blanck" >MSC</a> - Sistema de arquitetura de software.
+* <a href="https://sequelize.org/" target="blanck" >POO (Programação orientada a objetos)</a> - Estrutura do projeto.
+* <a href="https://www.typescriptlang.org/" target="blanck" >Typescript</a> -Linguagem de programação utilizada.
+* <a href="https://expressjs.com/pt-br/" target="blanck" >Express</a> - Framework para Node.js que fornece recursos mínimos para construção de servidores web.
 
 ## Rodando o seu projeto localmente
 
