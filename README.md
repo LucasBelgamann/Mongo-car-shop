@@ -7,7 +7,7 @@ Para este projeto, foram desenvolvidos os princípios de Programação Orientada
 <a href="https://www.betrybe.com/" target="blanck" ><img src="https://blog.betrybe.com/wp-content/uploads/2021/11/51808343.png" width="33" height="33" alt="Jest" /></a> - Esse projeto foi feito individualmente dentro da organização da trybe.
 
 
-## 🛸 # Construído com
+# Construído com
 
 * <a href="https://nodejs.org/en/" target="blanck" >Node.js</a> - Tecnologia utilizada.
 * <a href="https://www.mysql.com/" target="blanck" >MongoDb</a> - banco de dados NoSQL.
