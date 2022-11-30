@@ -17,7 +17,7 @@ Para este projeto, foram desenvolvidos os princípios de Programação Orientada
 * <a href="https://www.typescriptlang.org/" target="blanck" >Typescript</a> -Linguagem de programação utilizada.
 * <a href="https://expressjs.com/pt-br/" target="blanck" >Express</a> - Framework para Node.js que fornece recursos mínimos para construção de servidores web.
 
-## Rodando o seu projeto localmente
+## Rodando o projeto localmente
 
 <strong>1. Faça o git clone na sua máquina e entre no diretório:</strong>
  - Lembre-se de clonar o repositório no diretório desejado na sua máquina!
